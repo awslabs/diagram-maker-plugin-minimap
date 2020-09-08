@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createMinimap test createMinimap to match snapshoot 1`] = `
+<div>
+  <div
+    class="dm-minimap-container"
+    style="width: 200px; height: 200px;"
+  >
+    <div
+      class="dm-minimap-rectangle"
+      data-draggable="true"
+      data-event-target="true"
+      data-type="DiagramMakerMinimap.Rectangle"
+      style="transform: translate3d(0px, 50px, 0); width: 98px; height: 48px;"
+    />
+    <div
+      class="dm-minimap-canvas"
+      data-event-target="true"
+      data-type="DiagramMakerMinimap.Canvas"
+      style="width: 200px; height: 100px; top: 50px; left: 0px;"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+.dm-minimap-canvas {
+  position: absolute;
+  background-color: #f2f3f3;
+}
+.dm-minimap-rectangle{
+  border: 1px solid #ff9900;
+  position: absolute;
+  z-index: 4000;
+}
+.dm-minimap-container{
+  position: relative;
+  background-color: #d5dbdb;
+}

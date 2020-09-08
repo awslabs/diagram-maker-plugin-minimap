@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Minimap test Minimap when workspace short and wide 1`] = `
+<div
+  className="dm-minimap-container"
+  style={
+    Object {
+      "height": 200,
+      "width": 200,
+    }
+  }
+>
+  <div
+    className="dm-minimap-rectangle"
+    data-draggable={true}
+    data-event-target={true}
+    data-type="DiagramMakerMinimap.Rectangle"
+    style={
+      Object {
+        "height": 48,
+        "transform": "translate3d(0px, 50px, 0)",
+        "width": 98,
+      }
+    }
+  />
+  <div
+    className="dm-minimap-canvas"
+    data-event-target={true}
+    data-type="DiagramMakerMinimap.Canvas"
+    style={
+      Object {
+        "height": 100,
+        "left": 0,
+        "top": 50,
+        "width": 200,
+      }
+    }
+  >
+    <MiniNode
+      destroyCallback={[MockFunction]}
+      diagramMakerNode={
+        Object {
+          "diagramMakerData": Object {
+            "position": Object {
+              "x": 12.5,
+              "y": 9.375,
+            },
+            "size": Object {
+              "height": 3.125,
+              "width": 6.25,
+            },
+          },
+          "id": "node1",
+        }
+      }
+      renderCallback={[Function]}
+    />
+    <MiniNode
+      destroyCallback={[MockFunction]}
+      diagramMakerNode={
+        Object {
+          "diagramMakerData": Object {
+            "position": Object {
+              "x": 25,
+              "y": 18.75,
+            },
+            "size": Object {
+              "height": 3.125,
+              "width": 6.25,
+            },
+          },
+          "id": "node2",
+        }
+      }
+      renderCallback={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Minimap test Minimap when workspace tall and thin 1`] = `
+<div
+  className="dm-minimap-container"
+  style={
+    Object {
+      "height": 200,
+      "width": 200,
+    }
+  }
+>
+  <div
+    className="dm-minimap-rectangle"
+    data-draggable={true}
+    data-event-target={true}
+    data-type="DiagramMakerMinimap.Rectangle"
+    style={
+      Object {
+        "height": 48,
+        "transform": "translate3d(50px, 0px, 0)",
+        "width": 98,
+      }
+    }
+  />
+  <div
+    className="dm-minimap-canvas"
+    data-event-target={true}
+    data-type="DiagramMakerMinimap.Canvas"
+    style={
+      Object {
+        "height": 200,
+        "left": 50,
+        "top": 0,
+        "width": 100,
+      }
+    }
+  >
+    <MiniNode
+      destroyCallback={[MockFunction]}
+      diagramMakerNode={
+        Object {
+          "diagramMakerData": Object {
+            "position": Object {
+              "x": 12.5,
+              "y": 9.375,
+            },
+            "size": Object {
+              "height": 3.125,
+              "width": 6.25,
+            },
+          },
+          "id": "node1",
+        }
+      }
+      renderCallback={[Function]}
+    />
+    <MiniNode
+      destroyCallback={[MockFunction]}
+      diagramMakerNode={
+        Object {
+          "diagramMakerData": Object {
+            "position": Object {
+              "x": 25,
+              "y": 18.75,
+            },
+            "size": Object {
+              "height": 3.125,
+              "width": 6.25,
+            },
+          },
+          "id": "node2",
+        }
+      }
+      renderCallback={[Function]}
+    />
+  </div>
+</div>
+`;

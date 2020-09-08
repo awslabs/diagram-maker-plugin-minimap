@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiniNode test MiniNode 1`] = `
+<div
+  className="dm-mini-node"
+  style={
+    Object {
+      "height": 300,
+      "transform": "translate3d(400px, 600px, 0)",
+      "width": 200,
+    }
+  }
+>
+  <ComposeView
+    destroyCallback={[MockFunction]}
+    renderCallback={[MockFunction]}
+  />
+</div>
+`;
