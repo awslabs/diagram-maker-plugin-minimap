@@ -1,0 +1,34 @@
+.example-minimap-node {
+    box-sizing: border-box;
+    border: 1px solid #545b64;
+    background: #ffffff;
+    padding: 0px;
+    height: 100%;
+    transition: all .2s ease;
+
+    &.odd {
+      border: 1px solid red;
+    }
+
+    &.even {
+      border: 1px solid blue;
+    }
+
+    &.selected {
+      border: 1px solid #0073bb;;
+    }
+
+    &.rectangle {
+      padding: 1px;
+    }
+
+    &.circle {
+      border-radius: 100%;
+      padding: 0px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+}

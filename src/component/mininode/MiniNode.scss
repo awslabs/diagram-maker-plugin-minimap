@@ -1,0 +1,10 @@
+.dm-mini-node{
+    position: absolute;
+    .dm-content {
+      padding: 0px;
+      position: relative;
+      height: 100%;
+      z-index: 1;
+      box-sizing: border-box;
+    }
+  }
