@@ -2,9 +2,36 @@
   "name": "diagram-maker-plugin-minimap",
   "version": "1.0.0",
   "description": "A minimap plugin package for diagram-maker",
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com/"
+  },
+  "homepage": "https://awslabs.github.io/diagram-maker-plugin-minimap",
+  "contributors": [
+    "Sameer Goyal <sameeg@amazon.com>",
+    "Matthew Oakes <mattoa@amazon.com>"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
   "main": "dist/diagramMakerMinimap.js",
   "types": "dist/diagramMakerMinimap.d.ts",
   "typings": "dist/diagramMakerMinimap.d.ts",
+  "keywords": [
+    "aws",
+    "visualizaton",
+    "diagram",
+    "interactive",
+    "canvas",
+    "editor",
+    "drag",
+    "drop",
+    "workflow",
+    "state-machine",
+    "flowchart",
+    "diagram-maker",
+    "minimap"
+  ],
   "devDependencies": {
     "@cypress/code-coverage": "^3.8.1",
     "@types/classnames": "2.2.x",
@@ -19,7 +46,7 @@
     "classnames": "2.2.x",
     "css-loader": "4.2.x",
     "cypress": "5.0.x",
-    "diagram-maker": "1.0.x",
+    "diagram-maker": "file:../diagram-maker",
     "dts-bundle-generator": "5.4.x",
     "es6-shim": "0.35.x",
     "fork-ts-checker-webpack-plugin": "5.1.x",
@@ -76,7 +103,8 @@
     "lint:integ:fix": "tslint --config tslint.json --project ./cypress/tsconfig.json -t stylish --fix",
     "test:integ": "npm run build:integ && tsc --noEmit -p ./cypress && cypress run --env coverage=true",
     "test:integ:dev": "tsc --noEmit -p ./cypress && cypress open --config baseUrl=http://localhost:31213 --env coverage=true",
-    "release:integ": "npm run build:integ && npm run lint:integ && tsc --noEmit -p ./cypress && npm run test:integ"
+    "release:integ": "npm run build:integ && npm run lint:integ && tsc --noEmit -p ./cypress && npm run test:integ",
+    "prepublishOnly": "npm run clean && npm run release"
   },
   "repository": {
     "type": "git",
