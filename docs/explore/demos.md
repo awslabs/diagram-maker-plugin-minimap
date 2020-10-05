@@ -6,5 +6,5 @@ sort: 1
 
 We have a couple of demos with different configurations to showcase uses diagram maker minimap plugin could be rendered for.
 
-* **[Wide Minimap](/examples/WideMinimap.html)** : Uses a container with a lower aspect ratio than the canvas.
-* **[Tall Minimap](/examples/TallMinimap.html)** : Uses a container with a higher aspect ratio than the canvas.
+* **[Wide Minimap]({{ '/examples/WideMinimap.html' | relative_url }})** : Uses a container with a lower aspect ratio than the canvas.
+* **[Tall Minimap]({{ '/examples/TallMinimap.html' | relative_url }})** : Uses a container with a higher aspect ratio than the canvas.
