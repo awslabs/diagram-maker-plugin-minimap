@@ -9,7 +9,7 @@ A mockup of how a panel might be rendered using the minimap plugin within the Di
 # Explore
 
 ## Interactive Demo
-Check out some of our interactive demos [here]({{ '/explore/demos.html' | relative_url }}).
+Check out some of our interactive demos [here]({{ '/explore/demos.html' | relative_url }}). The code for these demos can be found [here](https://github.com/awslabs/diagram-maker-plugin-minimap/tree/master/integ).
 
 # How do I use it?
 
