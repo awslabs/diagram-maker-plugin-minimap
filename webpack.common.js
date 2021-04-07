@@ -6,6 +6,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
+  mode: "development",
   plugins: [
     new ForkTsCheckerWebpackPlugin()
   ],
@@ -29,9 +30,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -41,8 +40,10 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              parser: 'postcss-scss',
-              plugins: [autoprefixer()],
+              postcssOptions: {
+                parser: 'postcss-scss',
+                plugins: [autoprefixer()],
+              },
               sourceMap: true
             }
           }
@@ -63,8 +64,10 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              parser: 'postcss-scss',
-              plugins: [autoprefixer()],
+              postcssOptions: {
+                parser: 'postcss-scss',
+                plugins: [autoprefixer()],
+              },
               sourceMap: true
             }
           },

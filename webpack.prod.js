@@ -1,6 +1,7 @@
 const baseConfig = require('./webpack.common.js');
 const path = require('path');
 const merge = require('webpack-merge').merge;
+const webpack = require('webpack');
 const DeclarationBundlePlugin = require('./DeclarationBundlePlugin.js');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -36,7 +37,8 @@ module.exports = merge(baseConfig, {
     }),
     new DeclarationBundlePlugin({
       name: 'diagramMakerMinimap.d.ts'
-    })
+    }),
+    new webpack.IgnorePlugin({ resourceRegExp: /^(dagre)$/u })
   ],
   stats: {
     // This is because of a limitation in ts-loader
