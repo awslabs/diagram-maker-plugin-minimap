@@ -49,6 +49,7 @@
     "diagram-maker": "1.0.x",
     "dts-bundle-generator": "5.4.x",
     "es6-shim": "0.35.x",
+    "dagre": "^0.8.5",
     "fork-ts-checker-webpack-plugin": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "istanbul-instrumenter-loader": "3.0.x",
