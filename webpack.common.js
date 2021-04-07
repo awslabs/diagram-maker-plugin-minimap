@@ -1,6 +1,6 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
-
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
@@ -8,7 +8,8 @@ module.exports = {
   entry: './src/index.ts',
   mode: "development",
   plugins: [
-    new ForkTsCheckerWebpackPlugin()
+    new ForkTsCheckerWebpackPlugin(),
+    new webpack.IgnorePlugin({ resourceRegExp: /^(dagre)$/u })
   ],
   resolve: {
     alias: {

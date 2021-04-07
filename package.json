@@ -77,7 +77,7 @@
     "typescript": "4.x",
     "webpack": "^5.31.0",
     "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.0",
+    "webpack-dev-server": "^3.11.2",
     "webpack-merge": "5.1.x"
   },
   "peerDependencies": {
@@ -88,7 +88,7 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "clean": "rm -rf ./build && rm -rf ./coverage && rm -rf ./dist",
-    "start": "webpack-dev-server --config webpack.dev.js",
+    "start": "webpack serve --config webpack.dev.js",
     "server": "npm run start",
     "server:remote": "REMOTE=true npm run start",
     "lint": "tslint --config tslint.json --project tsconfig.json -t stylish",
