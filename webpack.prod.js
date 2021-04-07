@@ -2,7 +2,7 @@ const baseConfig = require('./webpack.common.js');
 const path = require('path');
 const merge = require('webpack-merge').merge;
 const DeclarationBundlePlugin = require('./DeclarationBundlePlugin.js');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // TODO: We can add a threshold on the asset size in our build setp here.
@@ -24,8 +24,9 @@ module.exports = merge(baseConfig, {
     'diagramMaker' : 'diagramMaker'
   },
   optimization: {
+    minimize: true,
     minimizer: [
-      new OptimizeCSSAssetsPlugin({})
+      new CssMinimizerPlugin(),
     ]
   },
   plugins: [
