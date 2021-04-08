@@ -42,7 +42,7 @@
     "@types/react-test-renderer": "16.8.x",
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.16.0",
-    "autoprefixer": "9.8.x",
+    "autoprefixer": "^10.2.5",
     "classnames": "2.2.x",
     "css-loader": "4.2.x",
     "cypress": "5.0.x",
@@ -60,9 +60,10 @@
     "node-sass": "^4.14.1",
     "nyc": "15.x",
     "css-minimizer-webpack-plugin": "^1.3.0",
-    "postcss": "7.0.x",
+    "postcss": "^8.2.9",
+    "postcss-import": "^14.0.1",
     "postcss-loader": "^5.2.0",
-    "postcss-scss": "2.1.x",
+    "postcss-scss": "^3.0.5",
     "react": "16.8.x",
     "react-dom": "16.8.x",
     "react-test-renderer": "16.8.x",
@@ -104,7 +105,8 @@
     "test:integ": "npm run build:integ && tsc --noEmit -p ./cypress && cypress run --env coverage=true",
     "test:integ:dev": "tsc --noEmit -p ./cypress && cypress open --config baseUrl=http://localhost:31213 --env coverage=true",
     "release:integ": "npm run build:integ && npm run lint:integ && tsc --noEmit -p ./cypress && npm run test:integ",
-    "prepublishOnly": "npm run clean && npm run release"
+    "prepublishOnly": "npm run clean && npm run release",
+    "test:cypress": "tsc --noEmit -p ./cypress && cypress run --env coverage=true"
   },
   "repository": {
     "type": "git",
