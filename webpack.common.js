@@ -9,7 +9,7 @@ module.exports = {
   mode: "development",
   plugins: [
     new ForkTsCheckerWebpackPlugin(),
-    // new webpack.IgnorePlugin({ resourceRegExp: /^(dagre)$/u })
+    new webpack.IgnorePlugin({ resourceRegExp: /^(dagre)$/u })
   ],
   resolve: {
     alias: {
