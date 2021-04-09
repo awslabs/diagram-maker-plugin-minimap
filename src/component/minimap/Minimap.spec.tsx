@@ -37,7 +37,7 @@ describe('Minimap', () => {
   const panels = {};
   const editor = { mode: EditorMode.SELECT };
   const renderMininode = jest.fn();
-  const destoryCallback = jest.fn();
+  const destroyCallback = jest.fn();
 
   it('test Minimap when workspace short and wide', () => {
     const workspace = {
@@ -62,7 +62,7 @@ describe('Minimap', () => {
       <Minimap
         state={state}
         renderMiniNode={renderMininode}
-        destoryCallback={destoryCallback}
+        destroyCallback={destroyCallback}
       />
     );
     const result = renderer.getRenderOutput();
@@ -92,7 +92,7 @@ describe('Minimap', () => {
       <Minimap
         state={state}
         renderMiniNode={renderMininode}
-        destoryCallback={destoryCallback}
+        destroyCallback={destroyCallback}
       />
     );
     const result = renderer.getRenderOutput();
@@ -122,7 +122,7 @@ describe('Minimap', () => {
       <Minimap
         state={state}
         renderMiniNode={renderMininode}
-        destoryCallback={destoryCallback}
+        destroyCallback={destroyCallback}
       />
     );
     const result = renderer.getRenderOutput();

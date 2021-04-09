@@ -400,7 +400,7 @@ const renderMiniNode = (node: DiagramMakerNode<{}>, container: HTMLElement) => {
   return createMinimapRectangularNode(node, container);
 };
 
-const minimapDestoryCallback = () => undefined;
+const minimapDestroyCallback = () => undefined;
 
 export function createMinimapPanel(container: HTMLElement, state: any) {
   const newDiv = document.createElement('div');
@@ -419,7 +419,7 @@ export function createMinimapPanel(container: HTMLElement, state: any) {
   newDiv.appendChild(draggableElement);
 
   // create a minimap here
-  newDiv.appendChild(createMinimap(state, renderMiniNode, minimapDestoryCallback));
+  newDiv.appendChild(createMinimap(state, renderMiniNode, minimapDestroyCallback));
 
   container.innerHTML = '';
   container.appendChild(newDiv);
