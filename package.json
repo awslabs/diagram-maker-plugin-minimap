@@ -105,8 +105,7 @@
     "test:integ": "npm run build:integ && tsc --noEmit -p ./cypress && cypress run --env coverage=true",
     "test:integ:dev": "tsc --noEmit -p ./cypress && cypress open --config baseUrl=http://localhost:31213 --env coverage=true",
     "release:integ": "npm run build:integ && npm run lint:integ && tsc --noEmit -p ./cypress && npm run test:integ",
-    "prepublishOnly": "npm run clean && npm run release",
-    "test:cypress": "tsc --noEmit -p ./cypress && cypress run --env coverage=true"
+    "prepublishOnly": "npm run clean && npm run release"
   },
   "repository": {
     "type": "git",
