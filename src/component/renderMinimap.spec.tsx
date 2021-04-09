@@ -35,9 +35,9 @@ describe('createMinimap', () => {
     }
   };
   const renderCallback = jest.fn();
-  const destoryCallback = jest.fn();
+  const destroyCallback = jest.fn();
   it('test createMinimap to match snapshoot', () => {
-    const res = createMinimap(state, renderCallback, destoryCallback);
+    const res = createMinimap(state, renderCallback, destroyCallback);
     expect(res).toMatchSnapshot();
   });
 });

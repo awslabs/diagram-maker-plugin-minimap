@@ -57,7 +57,7 @@ import { createMinimap } from 'diagram-maker-plugin-minimap';
 
 ...
 
-newDiv.appendChild(createMinimap(state, renderMiniNode, destoryCallback));
+newDiv.appendChild(createMinimap(state, renderMiniNode, destroyCallback));
 ```
 
 ### Minimap react component
@@ -72,7 +72,7 @@ render = () => (
     <Minimap
       state={state}
       renderMiniNode={renderMiniNode}
-      destoryCallback={destroyCallback}
+      destroyCallback={destroyCallback}
     />
   </div>
 );

@@ -7,14 +7,14 @@ import Minimap from './minimap/Minimap';
 export function createMinimap<NodeType, EdgeType>(
   state: DiagramMakerData<NodeType, EdgeType>,
   renderMiniNode: RenderCallback<NodeType>,
-  destoryCallback: DestroyCallback
+  destroyCallback: DestroyCallback
 ) {
   const reactRoot = document.createElement('div');
   ReactDOM.render(
     <Minimap
       state={state}
       renderMiniNode={renderMiniNode}
-      destoryCallback={destoryCallback}
+      destroyCallback={destroyCallback}
     />,
     reactRoot);
   return reactRoot;

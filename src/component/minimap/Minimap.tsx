@@ -20,7 +20,7 @@ import './Minimap.scss';
 export interface MinimapProps<NodeType, EdgeType> {
   state: DiagramMakerData<NodeType, EdgeType>;
   renderMiniNode: RenderCallback<NodeType>;
-  destoryCallback: DestroyCallback;
+  destroyCallback: DestroyCallback;
 }
 
 export default class Minimap<NodeType, EdgeType> extends React.Component< MinimapProps<NodeType, EdgeType>> {
@@ -119,7 +119,7 @@ export default class Minimap<NodeType, EdgeType> extends React.Component< Minima
 
   private renderMinimapNodes(nodes: DiagramMakerNodes<NodeType>, scale: number) {
     const renderCallback = this.props.renderMiniNode;
-    const destroyCallback = this.props.destoryCallback;
+    const destroyCallback = this.props.destroyCallback;
 
     const nodeKeys = Object.keys(nodes);
     return nodeKeys.map((nodeKey: string) => {
