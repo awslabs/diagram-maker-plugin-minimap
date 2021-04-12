@@ -82,7 +82,7 @@
     "webpack-merge": "5.1.x"
   },
   "peerDependencies": {
-    "diagramMaker": "1.0.x",
+    "diagram-maker": "1.0.x",
     "react": "16.8.x",
     "react-dom": "16.8.x"
   },
