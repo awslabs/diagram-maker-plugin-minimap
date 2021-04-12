@@ -2,7 +2,7 @@ import { DestroyCallback, DiagramMakerData } from 'diagram-maker';
 import { RenderCallback } from 'diagramMakerMinimap/service';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Minimap from './minimap/Minimap';
+import { Minimap } from './minimap/Minimap';
 
 export function createMinimap<NodeType, EdgeType>(
   state: DiagramMakerData<NodeType, EdgeType>,

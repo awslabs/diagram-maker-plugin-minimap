@@ -1,5 +1,5 @@
 import { EditorMode } from 'diagram-maker';
-import Minimap from 'diagramMakerMinimap/component/minimap/Minimap';
+import { Minimap } from 'diagramMakerMinimap/component/minimap/Minimap';
 import * as React from 'react';
 import * as ShallowRenderer from 'react-test-renderer/shallow';
 import './Node.scss';

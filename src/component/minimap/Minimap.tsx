@@ -23,7 +23,7 @@ export interface MinimapProps<NodeType, EdgeType> {
   destroyCallback: DestroyCallback;
 }
 
-export default class Minimap<NodeType, EdgeType> extends React.Component< MinimapProps<NodeType, EdgeType>> {
+export class Minimap<NodeType, EdgeType> extends React.Component< MinimapProps<NodeType, EdgeType>> {
   public render(): JSX.Element | undefined {
     const plugins = this.props.state.plugins;
     if (!plugins) return;
