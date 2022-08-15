@@ -1,6 +1,6 @@
 {
   "name": "diagram-maker-plugin-minimap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimap plugin package for diagram-maker",
   "author": {
     "name": "Amazon Web Services",
@@ -83,9 +83,7 @@
     "webpack-merge": "5.1.x"
   },
   "peerDependencies": {
-    "diagram-maker": "1.0.x",
-    "react": "16.8.x",
-    "react-dom": "16.8.x"
+    "diagram-maker": "*",
   },
   "scripts": {
     "build": "webpack --config webpack.prod.js",
