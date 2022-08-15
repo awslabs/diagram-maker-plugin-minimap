@@ -83,7 +83,7 @@
     "webpack-merge": "5.1.x"
   },
   "peerDependencies": {
-    "diagram-maker": "*",
+    "diagram-maker": "*"
   },
   "scripts": {
     "build": "webpack --config webpack.prod.js",
